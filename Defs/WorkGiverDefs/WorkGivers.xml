@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============= TreeChopping ============= -->
+  <WorkGiverDef>
+    <defName>TreesChop</defName>
+    <label>chop trees</label>
+    <giverClass>TreesOnly.WorkGiver_TreesChop</giverClass>
+    <workType>TreeChopping</workType>
+    <verb>chop trees</verb>
+    <gerund>chopping</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  <!-- ============= PlantCutting ============= -->
+  <WorkGiverDef>
+    <defName>PlantsCut</defName>
+    <label>cut plants</label>
+    <giverClass>TreesOnly.WorkGiver_PlantsCut_NoTrees</giverClass>
+    <workType>PlantCutting</workType>
+    <verb>cut</verb>
+    <gerund>cutting</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>
