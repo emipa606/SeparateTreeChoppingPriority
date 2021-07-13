@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using RimWorld;
 using Verse;
-using Verse.AI;
 
 namespace TreesOnly
 {
@@ -15,17 +10,16 @@ namespace TreesOnly
         {
             var allDesignations = pawn.Map.designationManager.allDesignations;
 
-            for (int i = 0; i < allDesignations.Count; i++)
+            foreach (var designation in allDesignations)
             {
-                var designation = allDesignations[i];
-
-                if (designation.def == DesignationDefOf.CutPlant || designation.def == DesignationDefOf.HarvestPlant)
+                if (designation.def != DesignationDefOf.CutPlant && designation.def != DesignationDefOf.HarvestPlant)
                 {
-                    var plant = designation.target.Thing as Plant;
-                    if (!plant.def.plant.IsTree)
-                    {
-                        yield return designation.target.Thing;
-                    }
+                    continue;
+                }
+
+                if (designation.target.Thing is Plant plant && !plant.def.plant.IsTree)
+                {
+                    yield return designation.target.Thing;
                 }
             }
         }

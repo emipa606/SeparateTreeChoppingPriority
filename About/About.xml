@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Separate Tree Chopping Priority (Continued)</name>
   <packageId>Mlie.SeparateTreeChoppingPriority</packageId>
@@ -8,21 +8,41 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>Update of Landon Martins mod for RimWorld 1.1
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Landon Martins mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Support-chat:
-https://invite.gg/mlie
-
-Non-steam version:
-https://github.com/emipa606/SeparateTreeChoppingPriority
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/SeparateTreeChoppingPriority][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-Separates plant cutting and tree chopping into separate priorities. 
-By default tree cutting takes higher priority.</description>
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
+THIS VERSION NO LONGER MAINTAINED.
+I&apos;ve been distracted with other things and Mlie has taken over the mod to keep it up to date. You can find it here:
+https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986andtscn=1594285366
+
+Separates plant cutting and tree chopping into separate priorities. By default tree cutting takes higher priority.
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

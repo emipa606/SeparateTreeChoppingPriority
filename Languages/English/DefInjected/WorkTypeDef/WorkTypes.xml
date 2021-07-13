@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <TreeChopping.label>Tree chop</TreeChopping.label>
   <TreeChopping.description>Chop down trees as designated</TreeChopping.description>
   <TreeChopping.labelShort>Tree chop</TreeChopping.labelShort>
   <TreeChopping.pawnLabel>Tree chopper</TreeChopping.pawnLabel>
   <TreeChopping.gerundLabel>chopping trees</TreeChopping.gerundLabel>
   <TreeChopping.verb>Chop</TreeChopping.verb>
-
-
 </LanguageData>

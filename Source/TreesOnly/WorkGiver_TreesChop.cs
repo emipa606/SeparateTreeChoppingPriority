@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -11,13 +7,7 @@ namespace TreesOnly
 {
     public class WorkGiver_TreesChop : WorkGiver_Scanner
     {
-        public override PathEndMode PathEndMode
-        {
-            get
-            {
-                return PathEndMode.Touch;
-            }
-        }
+        public override PathEndMode PathEndMode => PathEndMode.Touch;
 
         public override Danger MaxPathDanger(Pawn pawn)
         {
@@ -26,22 +16,23 @@ namespace TreesOnly
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            List<Designation> desList = pawn.Map.designationManager.allDesignations;
+            var desList = pawn.Map.designationManager.allDesignations;
 
-            for (int i = 0; i < desList.Count; i++)
+            foreach (var des in desList)
             {
-                Designation des = desList[i];             
-                if (des.def == DesignationDefOf.CutPlant || des.def == DesignationDefOf.HarvestPlant)
+                if (des.def != DesignationDefOf.CutPlant && des.def != DesignationDefOf.HarvestPlant)
                 {
-                    Plant plant = des.target.Thing as Plant;
+                    continue;
+                }
 
-                    if (plant != null)
-                    {
-                        if (plant.def.plant.IsTree)
-                        {
-                            yield return des.target.Thing;
-                        }
-                    }
+                if (des.target.Thing is not Plant plant)
+                {
+                    continue;
+                }
+
+                if (plant.def.plant.IsTree)
+                {
+                    yield return des.target.Thing;
                 }
             }
         }
@@ -52,40 +43,50 @@ namespace TreesOnly
             {
                 return null;
             }
-            if (!pawn.CanReserve(t, 1, -1, null, false))
+
+            if (!pawn.CanReserve(t))
             {
                 return null;
             }
+
             if (t.IsForbidden(pawn))
             {
                 return null;
             }
+
             if (t.IsBurning())
             {
                 return null;
             }
+
             Job result = null;
-            foreach (Designation current in pawn.Map.designationManager.AllDesignationsOn(t))
-            {                
+            foreach (var current in pawn.Map.designationManager.AllDesignationsOn(t))
+            {
                 if (current.def == DesignationDefOf.HarvestPlant)
                 {
-                    if (!((Plant)t).HarvestableNow || !((Plant)t).def.plant.IsTree)
+                    if (!((Plant) t).HarvestableNow || !((Plant) t).def.plant.IsTree)
                     {
                         break;
                     }
+
                     result = new Job(JobDefOf.HarvestDesignated, t);
                     break;
                 }
-                else if (current.def == DesignationDefOf.CutPlant)
+
+                if (current.def != DesignationDefOf.CutPlant)
                 {
-                    if (!((Plant)t).def.plant.IsTree)
-                    {
-                        break;
-                    }
-                    result = new Job(JobDefOf.CutPlantDesignated , t);
+                    continue;
+                }
+
+                if (!((Plant) t).def.plant.IsTree)
+                {
                     break;
                 }
+
+                result = new Job(JobDefOf.CutPlantDesignated, t);
+                break;
             }
+
             return result;
         }
     }

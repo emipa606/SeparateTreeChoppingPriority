@@ -1,18 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- TreeChopping -->
-
   <TreesChop.label>chop trees</TreesChop.label>
   <TreesChop.verb>chop trees</TreesChop.verb>
   <TreesChop.gerund>chopping</TreesChop.gerund>
-
-
   <!-- PlantCutting -->
-
   <PlantsCut.label>cut plants</PlantsCut.label>
   <PlantsCut.verb>cut</PlantsCut.verb>
   <PlantsCut.gerund>cutting</PlantsCut.gerund>
-
-
 </LanguageData>
