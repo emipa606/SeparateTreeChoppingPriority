@@ -21,7 +21,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986
 
 
 THIS VERSION NO LONGER MAINTAINED.
-I&apos;ve been distracted with other things and Mlie has taken over the mod to keep it up to date. You can find it here:
+I&amp;apos;ve been distracted with other things and Mlie has taken over the mod to keep it up to date. You can find it here:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986andtscn=1594285366
 
 Separates plant cutting and tree chopping into separate priorities. By default tree cutting takes higher priority.
@@ -37,6 +37,7 @@ Separates plant cutting and tree chopping into separate priorities. By default t
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

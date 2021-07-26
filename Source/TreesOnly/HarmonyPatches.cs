@@ -1,7 +1,6 @@
-﻿using HarmonyLib;
-using RimWorld;
+﻿using System.Reflection;
+using HarmonyLib;
 using Verse;
-using System.Reflection;
 
 namespace TreesOnly
 {

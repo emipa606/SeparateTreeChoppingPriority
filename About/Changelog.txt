@@ -1,5 +1,8 @@
 # Changelog for SeparateTreeChoppingPriority
 
+1.0.3.0 - Trees will no longer be cut for any reason when job is disabled, via llunak
+
+
 1.0.2.0 - Mod updated for 1.3 and passed autotests
 
 
