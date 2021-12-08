@@ -1,5 +1,8 @@
 # Changelog for SeparateTreeChoppingPriority
 
+1.0.4.0 - Fix for possible issue with woodcutting animals, thanks Scramster!
+
+
 1.0.3.0 - Trees will no longer be cut for any reason when job is disabled, via llunak
 
 

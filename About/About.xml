@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Separate Tree Chopping Priority (Continued)</name>
   <packageId>Mlie.SeparateTreeChoppingPriority</packageId>
@@ -21,11 +21,13 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Landon Martins mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+- Trees should no longer be cut down by pawns with the Tree cutting job disabled. Previously pawns would still cut down trees in growing-zones or when clearing cell for construction. Thank you llunak for the addition!
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -34,7 +36,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986
 	[/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 THIS VERSION NO LONGER MAINTAINED.
 I&amp;apos;ve been distracted with other things and Mlie has taken over the mod to keep it up to date. You can find it here:
@@ -43,7 +45,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1127744986andtscn=1594285
 Separates plant cutting and tree chopping into separate priorities. By default tree cutting takes higher priority.
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -52,6 +54,5 @@ Separates plant cutting and tree chopping into separate priorities. By default t
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>

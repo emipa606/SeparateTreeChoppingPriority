@@ -2,15 +2,14 @@
 using HarmonyLib;
 using Verse;
 
-namespace TreesOnly
+namespace TreesOnly;
+
+[StaticConstructorOnStartup]
+public class HarmonyPatches
 {
-    [StaticConstructorOnStartup]
-    public class HarmonyPatches
+    static HarmonyPatches()
     {
-        static HarmonyPatches()
-        {
-            var harmony = new Harmony("Mlie.SeparateTreeChoppingPriority");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-        }
+        var harmony = new Harmony("Mlie.SeparateTreeChoppingPriority");
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 }
