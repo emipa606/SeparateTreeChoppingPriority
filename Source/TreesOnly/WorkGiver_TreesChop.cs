@@ -16,7 +16,7 @@ public class WorkGiver_TreesChop : WorkGiver_Scanner
 
     public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
     {
-        var desList = pawn.Map.designationManager.allDesignations;
+        var desList = pawn.Map.designationManager.AllDesignations;
 
         foreach (var des in desList)
         {

@@ -8,7 +8,7 @@ public class WorkGiver_PlantsCut_NoTrees : WorkGiver_PlantsCut
 {
     public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
     {
-        var allDesignations = pawn.Map.designationManager.allDesignations;
+        var allDesignations = pawn.Map.designationManager.AllDesignations;
 
         foreach (var designation in allDesignations)
         {
