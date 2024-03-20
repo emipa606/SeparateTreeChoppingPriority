@@ -9,7 +9,6 @@ public class HarmonyPatches
 {
     static HarmonyPatches()
     {
-        var harmony = new Harmony("Mlie.SeparateTreeChoppingPriority");
-        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("Mlie.SeparateTreeChoppingPriority").PatchAll(Assembly.GetExecutingAssembly());
     }
 }
