@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cut plants -->
+  <PlantsCut.label>cut plants</PlantsCut.label>
+  <!-- EN: cutting -->
+  <PlantsCut.gerund>cutting</PlantsCut.gerund>
+  <!-- EN: cut -->
+  <PlantsCut.verb>cut</PlantsCut.verb>
+  <!-- EN: chop trees -->
+  <TreesChop.label>chop trees</TreesChop.label>
+  <!-- EN: chopping -->
+  <TreesChop.gerund>chopping</TreesChop.gerund>
+  <!-- EN: chop trees -->
+  <TreesChop.verb>chop trees</TreesChop.verb>
+</LanguageData>
