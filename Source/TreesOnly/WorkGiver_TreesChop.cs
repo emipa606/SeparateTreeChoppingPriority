@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -60,9 +61,9 @@ public class WorkGiver_TreesChop : WorkGiver_Scanner
         }
 
         Job result = null;
-        foreach (var current in pawn.Map.designationManager.AllDesignationsOn(t))
+        foreach (var def in pawn.Map.designationManager.AllDesignationsOn(t).Select(designation => designation.def))
         {
-            if (current.def == DesignationDefOf.HarvestPlant)
+            if (def == DesignationDefOf.HarvestPlant)
             {
                 if (!((Plant)t).HarvestableNow || !((Plant)t).def.plant.IsTree)
                 {
@@ -73,7 +74,7 @@ public class WorkGiver_TreesChop : WorkGiver_Scanner
                 break;
             }
 
-            if (current.def != DesignationDefOf.CutPlant)
+            if (def != DesignationDefOf.CutPlant)
             {
                 continue;
             }

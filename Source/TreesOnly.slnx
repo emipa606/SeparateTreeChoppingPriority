@@ -2,5 +2,17 @@
   <Configurations>
     <BuildType Name="Release" />
   </Configurations>
-  <Project Path="TreesOnly.csproj" />
+  <Project Path="TreesOnly/TreesOnly.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/Defs/WorkTypeDefs/">
+    <File Path="../Defs/WorkTypeDefs/WorkTypes.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/Defs/WorkGiverDefs/">
+    <File Path="../Defs/WorkGiverDefs/WorkGivers.xml" />
+  </Folder>
 </Solution>

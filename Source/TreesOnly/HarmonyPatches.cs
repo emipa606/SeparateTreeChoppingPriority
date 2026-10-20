@@ -5,7 +5,7 @@ using Verse;
 namespace TreesOnly;
 
 [StaticConstructorOnStartup]
-public class HarmonyPatches
+public static class HarmonyPatches
 {
     static HarmonyPatches()
     {
